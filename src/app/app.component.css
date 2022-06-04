@@ -1,0 +1,29 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: dimgrey;
+  height: 5.8vw;
+  margin: -10px -10px 0px -10px;
+}
+
+.icon{
+  width:5.8vw;
+  height: 5.8vw;
+}
+
+.searchbox{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  width: 70%;
+  padding: 5%;
+}
+
+.search{
+  margin-right: 5px;
+  width: auto;
+}
+
+

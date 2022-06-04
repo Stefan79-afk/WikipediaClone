@@ -1,0 +1,30 @@
+body{
+  background-color: #1b1c1c;
+  color: lightsteelblue;
+  font-size: 2.3vmin;
+  line-height: 3.38vh;
+}
+
+a{
+  color: aqua;
+  text-decoration: none;
+}
+
+a:hover{
+  animation-name: link;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link{
+  0%{
+  color: aqua;
+}
+  100%{
+    color: red;
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: dodgerblue;
+}

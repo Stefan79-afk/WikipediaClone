@@ -1,0 +1,701 @@
+<body class="body">
+<nav id="headers">
+    <h2>Jump to any section:</h2>
+    <ul>
+      <li>
+        <a (click)="scrollToElement(introduction)">Introduction</a>
+        <ul>
+          <li><a (click)="scrollToElement(definition)">What is a CPU?</a> </li>
+        </ul>
+      </li>
+      <li>
+        <a (click)="scrollToElement(history)">History</a>
+        <ul>
+          <li><a (click)="scrollToElement(target1)">1950s–1960s: Discrete transistor CPUs</a></li>
+          <li><a (click)="scrollToElement(target2)">Late 1960s–early 1970s: LSI and microprocessors</a> </li>
+          <li><a (click)="scrollToElement(target3)">1970s: Microprocessor revolution</a></li>
+          <li><a (click)="scrollToElement(target4)">1990s</a></li>
+          <li><a (click)="scrollToElement(timeline)">Timeline of events</a> </li>
+        </ul>
+      </li>
+      <li>
+        <a (click)="scrollToElement(functionality)">Functionality</a>
+        <ul>
+          <li><a (click)="scrollToElement(cpu_operation)">CPU Operation</a></li>
+          <li><a (click)="scrollToElement(integer_range)">Integer range</a></li>
+          <li><a (click)="scrollToElement(clock_rate)">Clock rate</a></li>
+          <li><a (click)="scrollToElement(parallelism)">Parallelism</a></li>
+          <li><a (click)="scrollToElement(instruction_level_parallelism)">Instruction level parallelism</a></li>
+          <li><a (click)="scrollToElement(thread_level_parallelism)">Thread level parallelism</a></li>
+          <li><a (click)="scrollToElement(data_parallelism)">Data parallelism</a></li>
+        </ul>
+      </li>
+      <li><a (click)="scrollToElement(gallery)">Gallery</a></li>
+      <li><a (click)="scrollToElement(videos)">Videos</a></li>
+      <li><a (click)="scrollToElement(references)">References</a></li>
+    </ul>
+
+</nav>
+
+<main>
+
+  <h2>Introduction</h2>
+  <h1>CPU</h1>
+  <section #introduction>
+    <article #definition>
+      <h3>
+        What is a CPU?
+      </h3>
+      <p>
+        A central processing unit (CPU) is the brain of the computer: it executes the instructions that make up a computer program.
+        The processor performs arithmetic, logic, controlling and input/output operations based on the instructions provided by the software
+      </p>
+      <p>
+        CPU's have changed over their history in size, design, and implementation.
+        They've gone from taking up literal meters in size to a small square capable of fitting into the human hand.
+        Their efficiency and manner of executing instructions has improved significantly since their beginning, and their design has gone through numerous iterations
+      </p>
+
+      <p>
+        Present day processors are almost always composed of several cores, than can independently execute instructions,
+        and so make it possible for a program to execute faster due to the parallelism in which the total amount of instructions can be divided between each core.
+        Currently, there are 2 big manufacturers of CPU's: Intel and AMD.
+      </p>
+    </article>
+
+  </section>
+  <hr>
+  <h2>History</h2>
+  <section #history>
+    <article #target1>
+      <h3>1950s–1960s: Discrete transistor CPUs</h3>
+
+      <p>
+        The design complexity of CPUs increased as various technologies facilitated building smaller and more reliable electronic devices.
+        The first such improvement came with the advent of the transistor.
+      </p>
+
+      <p>
+        ETL Mark III, which began development in 1954 and was completed in 1956, was the first stored-program transistor computer.
+        It was created by Japan's Electrotechnical Laboratory.
+      </p>
+
+      <p>
+        In the 1960s, the development of electronic calculators and electronic clocks in Japan helped make integrated circuits economical and practical.
+        In the late 1960s, the first calculator and clock chips began to show that very small computers might be possible with large-scale integration (LSI).
+        This culminated in the invention of the microprocessor, a single-chip CPU.
+      </p>
+    </article>
+
+    <article #target2>
+      <h3>
+        Late 1960s–early 1970s: LSI and microprocessors
+      </h3>
+
+      <p>
+        The Intel 4004, released in 1971, was the first commercial microprocessor. The origins of the 4004 date back to the the "Busicom Project",
+        which began at Japanese calculator company Busicom in April 1968, when engineer Masatoshi Shima was tasked with designing a special-purpose LSI chipset,
+        along with his supervisor Tadashi Tanba, for use in the Busicom 141-PF desktop calculator with integrated printer.
+        His initial design consisted of seven LSI chips, including a three-chip CPU. His design included arithmetic units (adders),
+        multiplier units, registers, read-only memory, and a macro-instruction set to control a decimal computer system.
+        Busicom then wanted a general-purpose LSI chipset, for not only desktop calculators, but also other equipment such as a teller machine,
+        cash register and billing machine. Shima thus began work on a general-purpose LSI chipset in late 1968.
+        Sharp engineer Tadashi Sasaki, who also became involved with its development, conceived of a single-chip microprocessor in 1968,
+        when he discussed the concept at a brainstorming meeting that was held in Japan. Sasaki attributes the basic invention to break the calculator
+        chipset into four parts with ROM (4001), RAM (4002), shift registers (4003) and CPU (4004) to an unnamed woman, a software engineering researcher from Nara
+        Women's College, who was present at the meeting. Sasaki then had his first meeting with Robert Noyce from Intel in 1968, and presented the woman's
+        four-division chipset concept to Intel and Busicom.
+      </p>
+
+      <p>
+        Busicom approached the American company Intel for manufacturing help in 1969. Intel, which was more of a memory company back then,
+        had facilities to manufacture the high density silicon gate MOS chip Busicom required. Shima went to Intel in June 1969 to present his design
+        proposal. Due to Intel lacking logic engineers to understand the logic schematics or circuit engineers to convert them, Intel asked Shima to
+        simplify the logic.[9] Intel wanted a single-chip CPU design, influenced by Sharp's Tadashi Sasaki who presented the concept to Busicom and Intel in 1968.
+        The single-chip microprocessor design was then formulated by Intel's Marcian "Ted" Hoff in 1969,
+        simplifying Shima's initial design down to four chips, including a single-chip CPU.
+        Due to Hoff's formulation lacking key details, Shima came up with his own ideas to find solutions for its implementation. Shima
+        was responsible for adding a 10-bit static shift register to make it useful as a printer's buffer and keyboard interface, many improvements
+        in the instruction set, making the RAM organization suitable for a calculator, the memory address information transfer, the key program
+        in an area of performance and program capacity, the functional specification, decimal computer idea, software, desktop calculator logic,
+        real-time I/O control, and data exchange instruction between the accumulator and general purpose register. Hoff and Shima eventually
+        realized the 4-bit microprocessor concept together, with the help of Intel's Stanley Mazor to interpret the ideas of Shima and Hoff.
+        The specifications of the four chips were developed over a period of a few months in 1969, between an Intel team led by Hoff and a Busicom team
+        led by Shima.
+      </p>
+
+      <p>
+        In late 1969, Shima returned to Japan.
+        After that, Intel had done no further work on the project until early 1970.
+        Shima returned to Intel in early 1970, and found that no further work had been done on the 4004 since he left, and that Hoff had moved on
+        to other projects. Only a week before Shima had returned to Intel, Federico Faggin had joined Intel and become the project leader.
+        After Shima explained the project to Faggin, they worked together to design the 4004.
+        Thus, the chief designers of the chip were Faggin who created the design methodology and the silicon-based chip design,
+        Hoff who formulated the architecture before moving on to other projects, and Shima who produced the initial Busicom design and then assisted in the
+        development of the final Intel design.
+        The 4004 was first introduced in Japan, as the microprocessor for the Busicom 141-PF calculator, in March 1971.
+        In North America, the first public mention of the 4004 was an advertisement in the November 15, 1971 edition of Electronic News.
+      </p>
+
+      <p>
+        NEC released the μPD707 and μPD708, a two-chip 4-bit CPU, in 1971.
+        They were followed by NEC's first single-chip microprocessor, the μPD700, in April 1972.
+        It was a prototype for the μCOM-4 (μPD751), released in April 1973,
+        combining the μPD707 and μPD708 into a single microprocessor.
+        In 1973, Toshiba released the TLCS-12, the first 12-bit microprocessor.
+      </p>
+    </article>
+
+    <article #target3>
+      <h3>1970s: Microprocessor revolution</h3>
+
+      <p>
+        The first commercial microprocessor, the binary coded decimal (BCD) based Intel 4004, was released by Busicom and Intel in 1971.
+        In March 1972, Intel introduced a microprocessor with an 8-bit architecture, the 8008. 4004 designers Federico and Masatoshi Shima
+        went on to design its successor, the Intel 8080, released in 1974. The 8080 was the basis for the Intel 8086, which is a direct ancestor
+        to today's ubiquitous x86 family (including Pentium and Core i7). Every instruction of the 8080 has a direct equivalent in the large x86
+        instruction set, although the opcode values are different in the latter.
+      </p>
+
+      <p>
+        By the mid-1970s, the use of integrated circuits in computers was common. The decade was marked by market upheavals caused by
+        the shrinking price of transistors.
+      </p>
+
+      <p>
+        It became possible to put an entire CPU on one printed circuit board.
+        The result was that microcomputers, usually with 16-bit words, and 4K to 64K of memory, became common.
+      </p>
+
+      <p>
+        The first single-chip 16-bit microprocessor was introduced in 1975.
+        Panafacom, a conglomerate formed by Japanese companies Fujitsu, Fuji Electric, and Matsushita, introduced the MN1610, a commercial 16-bit
+        microprocessor. According to Fujitsu, it was "the world's first 16-bit microcomputer on a single chip".
+      </p>
+    </article>
+
+    <article #target4>
+      <h3>1990s</h3>
+
+      <p>
+        In the early 1990s, engineers at Japan's Hitachi found ways to compress the reduced instruction sets so they fit in even smaller memory systems
+        than CISCs. Such compression schemes were used for the instruction set of their SuperH series of microprocessors, introduced in 1992.
+        The SuperH instruction set was later adapted for ARM architecture's Thumb instruction set.
+        In applications that do not need to run older binary software, compressed RISCs are growing to dominate sales.
+      </p>
+    </article>
+
+    <article #timeline>
+      <h3>
+        Timeline of events
+      </h3>
+
+      <ul>
+        <li><b>1968</b>: Busicom's Masatoshi Shima begins designing three-chip CPU that would later evolve into the single-chip Intel 4004 microprocessor.</li>
+        <li><b>1968</b>: Sharp engineer Tadashi Sasaki conceives single-chip microprocessor, which he discusses with Busicom and Intel.</li>
+        <li><b>1969</b>: Intel 4004's initial design led by Intel's Ted Hoff and Busicom's Masatoshi Shima.</li>
+        <li><b>1970</b>: Intel 4004's design completed by Intel's Federico Faggin and Busicom's Masatoshi Shima.</li>
+        <li><b>1971</b>: Busicom and Intel release the 4-bit Intel 4004, the first commercial microprocessor.</li>
+        <li><b>1971</b>: NEC release the μPD707 and μPD708, a two-chip 4-bit CPU.</li>
+        <li><b>1972</b>: NEC release single-chip 4-bit microprocessor, μPD700.</li>
+        <li><b>1973</b>: NEC release 4-bit μCOM-4 (μPD751),[13] combining the μPD707 and μPD708 into a single microprocessor.</li>
+        <li><b>1973</b>: Toshiba release TLCS-12, the first 12-bit microprocessor.[13][15]</li>
+        <li><b>1974</b>: Intel release the Intel 8080, an 8-bit microprocessor, designed by Federico Faggin and Masatoshi Shima.</li>
+        <li><b>1975</b>: MOS Technology release the 8-bit MOS Technology 6502, the first integrated processor to have an affordable price of $25 when the 6800 rival was $175.</li>
+        <li><b>1975</b>: Panafacom introduce the MN1610, the first commercial 16-bit single-chip microprocessor</li>
+        <li><b>1976</b>: Zilog introduce the 8-bit Zilog Z80, designed by Federico Faggin and Masatoshi Shima.</li>
+        <li><b>1978</b>: Intel introduces the Intel 8086 and Intel 8088, the first x86 chips.</li>
+        <li><b>1978</b> Fujitsu releases the MB8843 microprocessor.</li>
+        <li><b>1979</b>: Zilog release the Zilog Z8000, a 16-bit microprocessor, designed by Federico Faggin and Masatoshi Shima.</li>
+        <li><b>1979</b>: Motorola introduce the Motorola 68000, a 16/32-bit microprocessor.</li>
+        <li><b>1981</b>: Stanford MIPS introduced, one of the first reduced instruction set computing (RISC) designs.</li>
+        <li><b>1982</b>: Intel introduces the Intel 80286, which was the first Intel processor that could run all the software written for its predecessors, the 8086 and 8088.</li>
+        <li><b>1984</b>: Motorola introduces the Motorola 68020+68851, which enabled 32-bit instruction set and virtualization.</li>
+        <li><b>1985</b>: Intel introduces the Intel 80386 which adds a 32-bit instruction set to the x86 microarchitecture.
+          1985. ARM architecture introduced.</li>
+        <li><b>1989</b>: Intel introduces the Intel 80486.</li>
+        <li><b>1992</b>: Hitachi introduces SuperH architecture,[19] which provides the basis for ARM's Thumb instruction set.</li>
+        <li><b>1993</b>: Intel launches the original Pentium microprocessor, the first processor with a x86 superscalar microarchitecture.</li>
+        <li><b>1994</b>: ARM's Thumb instruction set introduced,[23] based on Hitachi's SuperH instruction set.</li>
+        <li><b>1995</b>: Intel introduces the Pentium Pro which becomes the foundation for the Pentium II, Pentium III, Pentium M and Intel Core architectures.</li>
+        <li><b>2000.</b>: AMD announced x86-64 extension to the x86 microarchitecture.</li>
+        <li><b>2000</b>: AMD hits 1 GHz with its Athlon microprocessor.</li>
+        <li><b>2002</b>: Intel released a Pentium 4 with hyper-threading, the first modern desktop processor to implement simultaneous multithreading (SMT).</li>
+        <li><b>2003</b>: AMD released the Athlon 64, the first 64-bit consumer CPU.</li>
+        <li><b>2003</b>: Intel introduced the Pentium M, a low power mobile derivative of the Pentium Pro architecture.</li>
+        <li><b>2005</b>:  AMD announced the Athlon 64 X2, their first x86 dual-core processor.</li>
+        <li><b>2006</b>: Intel introduces the Core line of CPUs based on a modified Pentium M design</li>
+        <li><b>2008</b>: About ten billion CPUs were produced.</li>
+        <li><b>2010</b>: Intel introduced Core i3, i5 and i7 processors.</li>
+        <li><b>2011</b>: AMD announced the first consumer 8-core CPU for desktop PCs.</li>
+        <li><b>2017</b>: AMD announced Ryzen processors based on Zen architecture.</li>
+      </ul>
+    </article>
+  </section>
+
+  <hr>
+
+  <h2>Functionality</h2>
+  <section #functionality>
+    <article #cpu_operation>
+      <h3>CPU Operation</h3>
+
+      <p>
+        The fundamental operation of most CPUs,
+        regardless of the physical form they take,
+        is to execute a sequence of stored instructions
+        called a program. The program is represented by a
+        series of numbers that are kept in some kind of
+        computer memory. There are four steps that nearly
+        all CPUs use in their operation: fetch, decode,
+        execute, and writeback.
+      </p>
+
+      <p>
+        The first step, fetch, involves retrieving an
+        instruction (which is represented by a number or
+        sequence of numbers) from program memory. The
+        location in program memory is determined by a
+        program counter (PC), which stores a number that
+        identifies the current position in the program. In
+        other words, the program counter keeps track of the
+        CPU's place in the current program. After an instruction
+        is fetched, the PC is incremented by the length of the
+        instruction word in terms of memory units. Often the
+        instruction to be fetched must be retrieved from
+        relatively slow memory, causing the CPU to stall while
+        waiting for the instruction to be returned. This issue
+        is largely addressed in modern processors by caches and
+        pipeline architectures (see below).
+      </p>
+
+      <p>
+        The instruction that the CPU fetches from memory
+        is used to determine what the CPU is to do. In the
+        decode step, the instruction is broken up into parts
+        that have significance to other portions of the CPU.
+        The way in which the numerical instruction value is
+        interpreted is defined by the CPU's instruction set
+        architecture (ISA). Often, one group of numbers
+        in the instruction, called the opcode, indicates which
+        operation to perform. The remaining parts of the
+        number usually provide information required for that
+        instruction, such as operands for an addition operation.
+        Such operands may be given as a constant value
+        (called an immediate value), or as a place to
+        locate a value: a register or a memory address,
+        as determined by some addressing mode.
+        In older designs the portions of the CPU
+        responsible for instruction decoding were unchangeable
+        hardware devices. However, in more abstract and
+        complicated CPUs and ISAs, a microprogram is often used
+        to assist in translating instructions into various
+        configuration signals for the CPU. This microprogram
+        is sometimes rewritable so that it can be modified to
+        change the way the CPU decodes instructions even after
+        it has been manufactured.
+      </p>
+
+      <p>
+        After the fetch and decode steps,
+        the execute step is performed.
+        During this step, various portions of
+        the CPU are connected so they can perform
+        the desired operation. If, for instance, an
+        addition operation was requested, an arithmetic
+        logic unit (ALU) will be connected to a set of
+        inputs and a set of outputs. The inputs provide
+        the numbers to be added, and the outputs will
+        contain the final sum. The ALU contains the circuitry
+        to perform simple arithmetic and logical operations on
+        the inputs (like addition and bitwise operations).
+        If the addition operation produces a result too large
+        for the CPU to handle, an arithmetic overflow flag in a
+        flags register may also be set.
+      </p>
+
+      <p>
+        The final step, writeback, simply "writes back" the
+        results of the execute step to some form of memory.
+        Very often the results are written to some internal
+        CPU register for quick access by subsequent instructions.
+        In other cases results may be written to slower, but
+        cheaper and larger, main memory. Some types of
+        instructions manipulate the program counter rather
+        than directly produce result data. These are generally
+        called "jumps" and facilitate behavior like loops,
+        conditional program execution
+        (through the use of a conditional jump),
+        and functions in programs.
+        Many instructions will also change the state of digits
+        in a "flags" register. These flags can be used to influence
+        how a program behaves, since they often indicate the
+        outcome of various operations. For example, one type of
+        "compare" instruction considers two values and sets a
+        number in the flags register according to which one is
+        greater. This flag could then be used by a later jump
+        instruction to determine program flow.
+      </p>
+
+      <p>
+        After the execution of the instruction and writeback of
+        the resulting data, the entire process repeats,
+        with the next instruction cycle normally fetching
+        the next-in-sequence instruction because of the
+        incremented value in the program counter. If the
+        completed instruction was a jump, the program counter
+        will be modified to contain the address of the
+        instruction that was jumped to, and program
+        execution continues normally. In more complex
+        CPUs than the one described here,
+        multiple instructions can be fetched,
+        decoded, and executed simultaneously.
+        This section describes what is generally
+        referred to as the "Classic RISC pipeline,"
+        which in fact is quite common among the simple CPUs used
+        in many electronic devices (often called microcontroller). It largely ignores the important role of CPU cache,
+        and therefore the access stage of the pipeline.
+      </p>
+    </article>
+
+    <article #integer_range>
+      <h3>Integer range</h3>
+
+      <p>
+        The way a CPU represents numbers is a design choice
+        that affects the most basic ways in which the device
+        functions. Some early digital computers used an
+        electrical model of the common decimal
+        (base ten) numeral system to represent numbers
+        internally. A few other computers have used more
+        exotic numeral systems like ternary (base three).
+        Nearly all modern CPUs represent numbers in binary
+        form, with each digit being represented by
+        some two-valued physical quantity such as a
+        "high" or "low" voltage.
+      </p>
+
+      <p>
+        Related to number representation is the
+        size and precision of numbers that a CPU can
+        represent. In the case of a binary CPU, a bit
+        refers to one significant place in the numbers
+        a CPU deals with. The number of bits (or numeral places)
+        a CPU uses to represent numbers is often called
+        "word size", "bit width", "data path width",
+        or "integer precision" when dealing with strictly
+        integer numbers (as opposed to floating point).
+        This number differs between architectures, and
+        often within different parts of the very same CPU.
+        For example, an 8-bit CPU deals with a range of
+        numbers that can be represented by eight binary digits
+        (each digit having two possible values),
+        that is, 28 or 256 discrete numbers. In effect,
+        integer size sets a hardware limit on the range of
+        integers the software run by the CPU can utilize.
+      </p>
+
+      <p>
+        Integer range can also affect the number of locations in memory the CPU can address (locate).
+        For example, if a binary CPU uses 32 bits to represent a memory address, and each memory address represents one octet (8 bits),
+        the maximum quantity of memory that CPU can address is 232 octets, or 4 GiB. This is a very simple view of CPU address space,
+        and many designs use more complex addressing methods like paging in order to locate more memory than their integer range would allow
+        with a flat address space.
+      </p>
+
+      <p>
+        Higher levels of integer range require more structures to deal with the additional digits, and therefore more complexity,
+        size, power usage, and general expense. It is not at all uncommon, therefore, to see 4- or 8-bit microcontrollers used in
+        modern applications, even though CPUs with much higher range (such as 16, 32, 64, even 128-bit) are available. The simpler
+        microcontrollers are usually cheaper, use less power, and therefore dissipate less heat, all of which can be major design
+        considerations for electronic devices. However, in higher-end applications, the benefits afforded by the extra range
+        (most often the additional address space) are more significant and often affect design choices. To gain some of the advantages
+        afforded by both lower and higher bit lengths, many CPUs are designed with different bit widths for different portions of the device.
+        For example, the IBM System/370 used a CPU that was primarily 32 bit, but it used 128-bit precision inside its floating point units
+        to facilitate greater accuracy and range in floating point numbers (Amdahl1964 & Amdahl et al. 1964 b). Many later CPU designs use similar mixed
+        bit width, especially when the processor is meant for general-purpose usage where a reasonable balance of integer and floating point capability
+        is required.
+      </p>
+
+    </article>
+
+    <article #clock_rate>
+      <h3>Clock rate</h3>
+
+      <p>
+        Most CPUs, and indeed most sequential logic devices, are synchronous in nature.
+        That is, they are designed and operate on assumptions about a synchronization signal.
+        This signal, known as a clock signal, usually takes the form of a periodic square wave.
+        By calculating the maximum time that electrical signals can move in various branches of a
+        CPU's many circuits, the designers can select an appropriate period for the clock signal.
+      </p>
+
+      <p>
+        This period must be longer than the amount of time it takes for a signal to move, or propagate,
+        in the worst-case scenario. In setting the clock period to a value well above the worst-case propagation
+        delay, it is possible to design the entire CPU and the way it moves data around the "edges" of the rising and falling clock signal.
+        This has the advantage of simplifying the CPU significantly, both from a design perspective and a component-count perspective.
+        However, it also carries the disadvantage that the entire CPU must wait on its slowest elements, even though some portions of it
+        are much faster. This limitation has largely been compensated for by various methods of increasing CPU parallelism. (see below)
+      </p>
+
+      <p>
+        However, architectural improvements alone do not solve all of the drawbacks of globally synchronous CPUs.
+        For example, a clock signal is subject to the delays of any other electrical signal. Higher clock rates in
+        increasingly complex CPUs make it more difficult to keep the clock signal in phase (synchronized) throughout the entire unit.
+        This has led many modern CPUs to require multiple identical clock signals to be provided in order to avoid delaying a single
+        signal significantly enough to cause the CPU to malfunction. Another major issue as clock rates increase dramatically is the
+        amount of heat that is dissipated by the CPU. The constantly changing clock causes many components to switch regardless of
+        whether they are being used at that time. In general, a component that is switching uses more energy than an element in a
+        static state. Therefore, as clock rate increases, so does heat dissipation, causing the CPU to require more effective cooling solutions.
+      </p>
+
+      <p>
+        One method of dealing with the switching of unneeded components is called clock gating, which involves turning off
+        the clock signal to unneeded components (effectively disabling them). However, this is often regarded as difficult to
+        implement and therefore does not see common usage outside of very low-power designs.[15] Another method of addressing some
+        of the problems with a global clock signal is the removal of the clock signal altogether. While removing the global clock
+        signal makes the design process considerably more complex in many ways, asynchronous (or clockless) designs carry marked advantages
+        in power consumption and heat dissipation in comparison with similar synchronous designs. While somewhat uncommon, entire asynchronous
+        CPUs have been built without utilizing a global clock signal. Two notable examples of this are the ARM compliant AMULET and the MIPS
+        R3000 compatible MiniMIPS. Rather than totally removing the clock signal, some CPU designs allow certain portions of the device to be
+        asynchronous, such as using asynchronous ALUs in conjunction with superscalar pipelining to achieve some arithmetic performance gains.
+        While it is not altogether clear whether totally asynchronous designs can perform at a comparable or better level than their synchronous
+        counterparts, it is evident that they do at least excel in simpler math operations. This, combined with their excellent power consumption
+        and heat dissipation properties, makes them very suitable for embedded computers (Garside1999 & Garside et al. 1999 a).
+      </p>
+    </article>
+
+    <article #parallelism>
+      <h3>Parallelism</h3>
+
+      <p>
+        The description of the basic operation of a CPU offered in the previous section describes the simplest form that
+        a CPU can take. This type of CPU, usually referred to as subscalar, operates on and executes one instruction on one or two
+        pieces of data at a time.
+      </p>
+
+      <p>
+        This process gives rise to an inherent inefficiency in subscalar CPUs. Since only one instruction is executed at a time,
+        the entire CPU must wait for that instruction to complete before proceeding to the next instruction. As a result the subscalar
+        CPU gets "hung up" on instructions which take more than one clock cycle to complete execution. Even adding a second execution unit
+        (see below) does not improve performance much; rather than one pathway being hung up, now two pathways are hung up and the number of
+        unused transistors is increased. This design, wherein the CPU's execution resources can operate on only one instruction at a time, can
+        only possibly reach scalar performance (one instruction per clock). However, the performance is nearly always subscalar (less than one
+        instruction per cycle).
+      </p>
+
+      <p>
+        Attempts to achieve scalar and better performance have resulted in a variety of design methodologies that cause the
+        CPU to behave less linearly and more in parallel. When referring to parallelism in CPUs, two terms are generally
+        used to classify these design techniques. Instruction level parallelism (ILP) seeks to increase the rate at which
+        instructions are executed within a CPU (that is, to increase the utilization of on-die execution resources), and thread
+        level parallelism (TLP) purposes to increase the number of threads (effectively individual programs) that a CPU can execute
+        simultaneously. Each methodology differs both in the ways in which they are implemented, as well as the relative effectiveness
+        they afford in increasing the CPU's performance for an application.
+      </p>
+
+    </article>
+
+    <article #instruction_level_parallelism>
+      <h3>Instruction level parallelism</h3>
+
+      <p>
+        One of the simplest methods used to accomplish increased parallelism is to begin the first steps of instruction fetching and
+        decoding before the prior instruction finishes executing. This is the simplest form of a technique known as instruction pipelining,
+        and is utilized in almost all modern general-purpose CPUs. Pipelining allows more than one instruction to be executed at any given
+        time by breaking down the execution pathway into discrete stages. This separation can be compared to an assembly line, in which an
+        instruction is made more complete at each stage until it exits the execution pipeline and is retired.
+      </p>
+
+      <p>
+        Pipelining does, however, introduce the possibility for a situation where the result of the previous operation
+        is needed to complete the next operation; a condition often termed data dependency conflict.
+        To cope with this, additional care must be taken to check for these sorts of conditions and delay
+        a portion of the instruction pipeline if this occurs. Naturally, accomplishing this requires additional
+        circuitry, so pipelined processors are more complex than subscalar ones (though not very significantly so).
+        A pipelined processor can become very nearly scalar, inhibited only by pipeline stalls (an instruction spending more than one clock cycle in a stage).
+      </p>
+
+      <p>
+        Further improvement upon the idea of instruction pipelining led to the development of a method that decreases the idle time of
+        CPU components even further. Designs that are said to be superscalar include a long instruction
+        pipeline and multiple identical execution units. [Huynh 2003] In a superscalar pipeline, multiple
+        instructions are read and passed to a dispatcher, which decides whether or not the instructions can
+        be executed in parallel (simultaneously). If so they are dispatched to available execution units,
+        resulting in the ability for several instructions to be executed simultaneously. In general, the more
+        instructions a superscalar CPU is able to dispatch simultaneously to waiting execution units, the more
+        instructions will be completed in a given cycle.
+      </p>
+
+      <p>
+        Most of the difficulty in the design of a superscalar CPU architecture lies in creating an effective dispatcher.
+        The dispatcher needs to be able to quickly and correctly determine whether instructions can be executed in parallel,
+        as well as dispatch them in such a way as to keep as many execution units busy as possible. This requires that the instruction
+        pipeline is filled as often as possible and gives rise to the need in superscalar architectures for significant amounts of CPU cache.
+        It also makes hazard-avoiding techniques like branch prediction, speculative execution, and out-of-order execution crucial to maintaining
+        high levels of performance. By attempting to predict which branch (or path) a conditional instruction will take, the CPU can minimize the
+        number of times that the entire pipeline must wait until a conditional instruction is completed. Speculative execution often provides modest
+        performance increases by executing portions of code that may or may not be needed after a conditional operation completes. Out-of-order execution
+        somewhat rearranges the order in which instructions are executed to reduce delays due to data dependencies.
+      </p>
+
+      <p>
+        In the case where a portion of the CPU is superscalar and part is not, the part which is not suffers a performance penalty due to scheduling stalls.
+        The original Intel Pentium (P5) had two superscalar ALUs which could accept one instruction per clock each, but its
+        FPU could not accept one instruction per clock. Thus the P5 was integer superscalar but not floating point superscalar.
+        Intel's successor to the Pentium architecture, P6, added superscalar capabilities to its floating point features, and
+        therefore afforded a significant increase in floating point instruction performance.
+      </p>
+
+      <p>
+        Both simple pipelining and superscalar design increase a CPU's ILP by allowing a single processor to complete execution of instructions at rates
+        surpassing one instruction per cycle (IPC).[17] Most modern CPU designs are at least somewhat superscalar, and nearly all general purpose
+        CPUs designed in the last decade are superscalar. In later years some of the emphasis in designing high-ILP computers has been moved out of
+        the CPU's hardware and into its software interface, or ISA. The strategy of the very long instruction word (VLIW) causes some ILP to become
+        implied directly by the software, reducing the amount of work the CPU must perform to boost ILP and thereby reducing the design's complexity.
+      </p>
+
+    </article>
+
+    <article #thread_level_parallelism>
+      <h3>Thread level parallelism</h3>
+      <p>
+        Another strategy of achieving performance is to execute multiple programs or threads in parallel.
+        This area of research is known as parallel computing. In Flynn's taxonomy, this strategy is known as Multiple Instructions-Multiple Data or
+        MIMD. One technology used for this purpose was multiprocessing (MP). The initial flavor of this technology is known as symmetric multiprocessing
+        (SMP), where a small number of CPUs share a coherent view of their memory system. In this scheme, each CPU has additional hardware to maintain a
+        constantly up-to-date view of memory. By avoiding stale views of memory, the CPUs can cooperate on the same program and programs can migrate from
+        one CPU to another. To increase the number of cooperating CPUs beyond a handful, schemes such as non-uniform memory access (NUMA) and directory-based
+        coherence protocols were introduced in the 1990s. SMP systems are limited to a small number of CPUs while NUMA systems have been built with thousands
+        of processors. Initially, multiprocessing was built using multiple discrete CPUs and boards to implement the interconnect between the processors.
+        When the processors and their interconnect are all implemented on a single silicon chip, the technology is known as a multi-core microprocessor.
+      </p>
+
+      <p>
+        It was later recognized that finer-grain parallelism existed with a single program.
+        A single program might have several threads (or functions) that could be executed separately or in parallel.
+        Some of earliest examples of this technology implemented input/output processing such as direct memory access as a separate
+        thread from the computation thread. A more general approach to this technology was introduced in the 1970s when systems were
+        designed to run multiple computation threads in parallel. This technology is known as multi-threading (MT).
+        This approach is considered more cost-effective than multiprocessing, as only a small number of components within a CPU is
+        replicated in order to support MT as opposed to the entire CPU in the case of MP. In MT, the execution units and the memory system including
+        the caches are shared among multiple threads. The downside of MT is that the hardware support for multithreading is more visible to software
+        than that of MP and thus supervisor software like operating systems have to undergo larger changes to support MT. One type of MT that was
+        implemented is known as block multithreading, where one thread is executed until it is stalled waiting for data to return from external memory.
+        In this scheme, the CPU would then quickly switch to another thread which is ready to run, the switch often done in one CPU clock cycle,
+        such as the UltraSPARC Technology. Another type of MT is known as simultaneous multithreading, where instructions of multiple threads are
+        executed in parallel within one CPU clock cycle.
+      </p>
+
+      <p>
+        For several decades from the 1970s to early 2000s, the focus in designing high performance general purpose CPUs
+        was largely on achieving high ILP through technologies such as pipelining, caches, superscalar execution, out-of-order
+        execution, etc. This trend culminated in large, power-hungry CPUs such as the Intel Pentium 4. By the early 2000s,
+        CPU designers were thwarted from achieving higher performance from ILP techniques due to the growing disparity between
+        CPU operating frequencies and main memory operating frequencies as well as escalating CPU power dissipation owing to more esoteric ILP techniques.
+      </p>
+
+      <p>
+        CPU designers then borrowed ideas from commercial computing markets such as transaction processing,
+        where the aggregate performance of multiple programs, also known as throughput computing, was more
+        important than the performance of a single thread or program.
+      </p>
+
+      <p>
+        This reversal of emphasis is evidenced by the proliferation of dual and multiple core CMP (chip-level multiprocessing)
+        designs and notably, Intel's newer designs resembling its less superscalar P6 architecture. Late designs in several processor
+        families exhibit CMP, including the x86-64 Opteron and Athlon 64 X2, the SPARC UltraSPARC T1, IBM POWER4 and POWER5, as well as
+        several video game console CPUs like the Xbox 360's triple-core PowerPC design, and the PS3's 8-core Cell microprocessor.
+      </p>
+
+    </article>
+
+    <article #data_parallelism>
+
+      <h3>Data parallelism</h3>
+
+      <p>
+        A less common but increasingly important paradigm of CPUs (and indeed, computing in general) deals with data parallelism.
+        The processors discussed earlier are all referred to as some type of scalar device.[18] As the name implies, vector processors
+        deal with multiple pieces of data in the context of one instruction. This contrasts with scalar processors, which deal with one
+        piece of data for every instruction. Using Flynn's taxonomy, these two schemes of dealing with data are generally referred to as
+        SISD (single instruction, single data) and SIMD (single instruction, multiple data), respectively. The great utility in creating
+        CPUs that deal with vectors of data lies in optimizing tasks that tend to require the same operation (for example, a sum or a dot product)
+        to be performed on a large set of data. Some classic examples of these types of tasks are multimedia applications (images, video, and sound),
+        as well as many types of scientific and engineering tasks. Whereas a scalar CPU must complete the entire process of fetching, decoding, and
+        executing each instruction and value in a set of data, a vector CPU can perform a single operation on a comparatively large set of data with
+        one instruction. Of course, this is only possible when the application tends to require many steps which apply one operation to a large set of data.
+      </p>
+
+      <p>
+        Most early vector CPUs, such as the Cray-1, were associated almost exclusively with scientific research and cryptography applications.
+        However, as multimedia has largely shifted to digital media, the need for some form of SIMD in general-purpose CPUs has become significant.
+        Shortly after floating point execution units started to become commonplace to include in general-purpose processors, specifications for and
+        implementations of SIMD execution units also began to appear for general-purpose CPUs. Some of these early SIMD specifications like HP's Multimedia
+        Acceleration eXtensions (MAX) and Intel's MMX were integer-only. This proved to be a significant impediment for some software developers,
+        since many of the applications that benefit from SIMD primarily deal with floating point numbers. Progressively, these early designs were
+        refined and remade into some of the common, modern SIMD specifications, which are usually associated with one ISA. Some notable modern examples are
+        Intel's SSE and the PowerPC-related AltiVec (also known as VMX).
+      </p>
+
+    </article>
+  </section>
+
+  <hr>
+
+  <h2>Gallery</h2>
+  <section #gallery id="gallery">
+
+    <div>
+      <img src="https://media.wired.com/photos/593221035c4fbd732b550fec/16:9/w_929,h_523,c_limit/s-Intel-Core-X-Series-processor-family-18-690x460_HP.jpg">
+      <h3>A CPU</h3>
+    </div>
+
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/ABasicComputer.gif/370px-ABasicComputer.gif">
+      <h3>The Structure of a CPU</h3>
+    </div>
+
+    <div>
+      <img src="https://static.techspot.com/articles-info/1840/images/2019-05-20-image-2.jpg">
+      <h3>A CPU being manufactured</h3>
+    </div>
+
+    <div>
+      <img src="https://ourtechroom.com/images/intel_amd_processor_pin330342.jpg">
+      <h3>AMD and Intel CPU comparison</h3>
+    </div>
+  </section>
+
+  <h2>Videos</h2>
+  <section #videos>
+    <div>
+      <h3>The Evolution Of CPU Processing Power Part 1: The Mechanics Of A CPU</h3>
+      <iframe  src="https://www.youtube.com/embed/sK-49uz3lGg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div>
+      <h3>A History of Processors</h3>
+      <iframe  src="https://www.youtube.com/embed/iSKGVncs_ZQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div>
+      <h3>The Central Processing Unit (CPU): Crash Course Computer Science #7</h3>
+      <iframe  src="https://www.youtube.com/embed/FZGugFqdr60" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <hr>
+
+  <h2>References</h2>
+  <section #references>
+    <ul>
+      <li><a target="_blank" href="https://en.wikipedia.org/wiki/Central_processing_unit">Central processing unit</a></li>
+      <li><a target="_blank" href="https://en.wikipedia.org/wiki/History_of_general-purpose_CPUs">History of general-purpose CPUs</a></li>
+      <li><a target="_blank" href="https://www.techjunkie.com/a-cpu-history/">A detailed history of the processor</a></li>
+    </ul>
+  </section>
+</main>
+
+</body>
